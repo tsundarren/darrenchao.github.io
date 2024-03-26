@@ -1,0 +1,17 @@
+.typing-animation {
+    display: inline-block;
+  }
+  
+  .typing-animation::after {
+    content: "|";
+    font-weight: 200;
+    color: white;
+    opacity: 0; /* Hide the caret by default */
+    animation: blink-caret 1s infinite; /* Start blinking caret animation */
+  }
+  
+  @keyframes blink-caret {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  

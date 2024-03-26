@@ -1,0 +1,89 @@
+/* Modal.css */
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /* Modal content */
+  .ModalContent {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Ensure content flows vertically */
+    justify-content: space-between; /* Align content to the bottom */
+    align-items: center; /* Center align items horizontally */
+    position: relative;
+    width: 50vw;
+    height: 70vh;
+    background-color: #082f49;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInFromBottom 1s ease forwards;
+  }
+
+  .ModalContent h2 {
+    font-family: Source Code Pro;
+    font-size: 12pt;
+    color: #bae6fd;
+    animation: trailText 1s ease forwards;
+  }
+
+  .ModalContent img {
+    max-width: 50%; /* Ensure the image doesn't exceed the viewport width */
+    max-height: auto; /* Limit the image height to 80% of the viewport height */
+    animation: slideInFromBottom 1.5s ease forwards; /* Apply slideInFromBottom animation to img */
+  }
+
+  .ModalContent p {
+    font-family: Poppins;
+    font-size: 12pt;
+    color: #bae6fd;
+    text-align: left;
+    animation: trailText 2s;
+  }
+ 
+  /* Close button */
+.CloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .CloseButton:hover {
+    color: #d1d1d1;
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes trailText {
+    0% {
+      opacity: 0;
+      transform: translateY(15vh);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
