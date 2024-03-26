@@ -1,39 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ProjectCard.css';
-import Modal from './Modal';
 
-const ProjectCard = ({ id, title, description, imageUrl, preview, link }) => {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
+const ProjectCard = ({ title, description, imageUrl }) => {
   return (
-    <>
-      <div
-        className="ProjectCardContainer"
-        onClick={openModal}
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      >
-        <div id={id} className="ProjectCard"></div>
-        <p>{title}</p>
+    <div className="ProjectCardContainer">
+      <div className="ImagePreview" style={{ backgroundImage: `url(${imageUrl})` }}></div>
+      <div className="CardContent">
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
-      {modalOpen && (
-        <Modal
-          title={title}
-          description={description}
-          imageUrl={imageUrl}
-          preview={preview}
-          link={link}
-          closeModal={closeModal}
-        />
-      )}
-    </>
+    </div>
   );
 };
 

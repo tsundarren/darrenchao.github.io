@@ -1,45 +1,46 @@
 .ProjectCardContainer {
-  position: relative;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
+  font-family: 'San Francisco', sans-serif; /* Specify the font family with quotes */
+  display: flex;
+  align-items: flex-start;
   cursor: pointer;
+  padding: 10px;
+  width: 60vw;
+  text-align: left;
+  background-color: transparent;
+  margin: 10px;
+  transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  z-index: 1;
 }
 
-.ProjectCard {
-  box-shadow: 15px 15px 71px -2px rgba(0, 0, 0, 0.25);
-  width: 40vh;
-  height: 40vh;
-  margin-top: 6vh;
+.ProjectCardContainer:hover {
+  background-color: rgba(131, 109, 167, 0.1); /* Darken the background color on hover */
+  border-radius: 10px;
 }
 
-.ProjectCard:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.ProjectCardContainer:hover ~ .ProjectCardContainer {
+  opacity: 0.5; /* Reduce opacity of other cards on hover */
 }
 
-.ProjectCardContainer p {
-  font-size: 16px;
-  font-family: Source Code Pro;
-  color: white;
+.ImagePreview {
+  flex: 0 0 auto;
+  width: 150px; /* Adjust according to your preference */
+  height: 150px; /* Adjust according to your preference */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 
-.LinksContainer {
-  position: absolute;
-  bottom: 5px;
-  right: 0px;
+.CardContent {
+  flex: 1 1 auto;
 }
 
-.Link {
-  display: inline-block;
-  margin-left: 10px;
+.CardContent h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-.LinkImage {
-  width: 25px;
-  height: 25px;
-}
-
-.Link:hover {
-  opacity: 0.7;
+.CardContent p {
+  font-size: 14px;
+  color: #94a3b8;
 }

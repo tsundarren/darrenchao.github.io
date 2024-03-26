@@ -1,16 +1,15 @@
 import React from 'react';
 import './App.css';
 
+// Importing images
 import Portrait from './img/portrait.png';
 import GitHub from './img/github.png';
 import LinkedIn from './img/linkedin.png';
 import MusicalCalculator from './img/musical-calculator.png'
-import MusicalCalculatorPreview from './img/musical-calc-preview.gif'
 import ArtWork from './img/artwork.png'
-import ArtWorkPreview from './img/artwork-preview.gif'
 import CampusEats from './img/campus-eats.png'
-import CampusEatsPreview from './img/campus-eats-preview.png'
 
+// Importing React components
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import TypingAnimation from './components/TypingAnimation';
 import ProjectCard from './components/ProjectCard';
@@ -26,6 +25,8 @@ function App() {
       <TitleBar /> 
       <Parallax translateY={[-20, 20]}>
         <ScrollDownArrow />
+
+        {/* Introduction Section */}
         <section className="Introduction">
           <header className="App-header">
             <div className="IntroductionContent">
@@ -40,6 +41,7 @@ function App() {
               <img src={Portrait} className="Portrait" alt="me" />
             </div>
 
+            {/* Social Icons */}
             <div className="Social">
               <Parallax translateY={[0, -75]}>
                 <a href="https://GitHub.com/tsundarren" target="_blank" rel="noopener noreferrer">
@@ -54,6 +56,7 @@ function App() {
         </section>
       </Parallax>
 
+      {/* Portfolio Section */}
       <section id="portfolio" className="PortfolioSection">
       <div id="nightSky" className="NightSky">
           <night-sky
@@ -72,59 +75,39 @@ function App() {
         </div>
         <div className="Portfolio">
             <ProjectCard
-              id="musical-calculator"
               title="Musical Calculator"
               description={(
                 <div>
-                  Musical Calculator is a creative React passion project aimed at exploring modern web development technologies. Through this project, I sought to delve into React and associated libraries to create a unique and engaging user experience. <br /> <br />
-
-                  The core functionality of Musical Calculator focuses on basic arithmetic calculations, utilizing existing context API logic for seamless performance. What sets this project apart is its integration of musical elements, providing users with an interactive and unconventional calculator experience. <br /> <br />
-
-                  By leveraging React's functional event handlers, Musical Calculator allows users to input data through both mouse clicks and keyboard interactions. Additionally, users can enjoy playing a set of 19 distinct piano key sounds alongside performing calculations.
+                  Musical Calculator is a React passion project exploring modern web development. It combines basic arithmetic functionality with interactive piano sounds, providing users with a unique and engaging calculator experience. Users can perform calculations through mouse clicks or keyboard inputs while enjoying 19 distinct piano key sounds.
                 </div>
               )}
               imageUrl={MusicalCalculator}
-              preview={MusicalCalculatorPreview}
-              link='https://github.com/tsundarren/musical-calculator'
             />
           
             <ProjectCard
-              id="ArtWork"
               title="ArtWork"
               description={(
                 <div>
-                  ArtWork represents the culmination of my undergraduate journey at UNCC, developed as part of the capstone course. This project showcases my technical skills in integrating Python Flask, MySQL, HTML5, CSS, and JavaScript. <br /> <br />
-
-                  Operating at the intersection of social networking and digital commerce, ArtWork empowers users to curate their artistic portfolios through expressive posts. By leveraging frontend and backend technologies, ArtWork fosters dynamic interactions, allowing users to engage with each other's creations through likes, comments, and follows. <br /> <br />
-
-                  Users can explore comprehensive portfolios on individual profile pages, offering a glimpse into each artist's style and creations. The real-time auction feature serves as a vibrant marketplace where users can commission and bid for artwork, enticing others to vie for their talents.
+                  ArtWork, developed as part of my UNCC capstone course, showcases my technical expertise in Python Flask, MySQL, HTML5, CSS, and JavaScript. It merges social networking with digital commerce, enabling users to curate artistic portfolios and engage dynamically through likes, comments, and follows. With real-time auctions, users can commission and bid for artwork, fostering a vibrant marketplace for creative talent.
                 </div>
               )}
               imageUrl={ArtWork}
-              preview={ArtWorkPreview}
-              link='https://github.com/tsundarren/artwork'
             />
 
             <ProjectCard
-              id="CampusEats"
               title="Campus Eats"
               description={(
                 <div>
-                  This UNCC 3160 Database Design and Implementation project seeks to enhance the existing "Campus Eats" database by integrating a robust rating system. <br /> <br />
-
-                  Using MySQL, we aim to expand the database's functionality by incorporating user ratings for both restaurants and delivery drivers. <br /> <br />
-
-                  Our goal is to provide users with the ability to contribute valuable insights and reviews, thereby improving the overall experience for the Campus Eats community.
+                  The UNCC 3160 Database Design and Implementation project aims to enhance the "Campus Eats" database with a robust rating system. Using MySQL, we'll integrate user ratings for restaurants and delivery drivers, empowering users to contribute insights and reviews for the Campus Eats community.
                 </div>
               )}
               imageUrl={CampusEats}
-              preview={CampusEatsPreview}
-              link='https://github.com/tsundarren/3160-Database-Project'
             />
         </div>  
       </section>
 
-      <Parallax translateY={[-5, 5]}>
+      {/* Skill Section */}
+      <Parallax translateY={[5, -5]}>
         <div style={{ display: 'flex', alignItems: 'center', width: '100%'}}>
           <h2 className="SectionTitle">MY SKILL</h2>
           <hr className="Divider"/>

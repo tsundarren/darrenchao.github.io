@@ -1,4 +1,9 @@
 /* Global Styles */
+@font-face {
+  font-family: 'San Francisco';
+  src: url('./fonts/SF-Pro.ttf') format('truetype');
+}
+
 .App {
   text-align: center;
   background-color: #0f172a;
