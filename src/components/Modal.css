@@ -35,7 +35,7 @@
     animation: trailText 1s ease forwards;
   }
 
-  .ModalContent img {
+  .ModalContent a {
     max-width: 50%; /* Ensure the image doesn't exceed the viewport width */
     max-height: auto; /* Limit the image height to 80% of the viewport height */
     animation: slideInFromBottom 1.5s ease forwards; /* Apply slideInFromBottom animation to img */

@@ -90,6 +90,7 @@ function App() {
               )}
               imageUrl={MusicalCalculator}
               preview={MusicalCalcPreview}
+              link='https://github.com/tsundarren/musical-calculator'
             />
           
             <ProjectCard
@@ -106,6 +107,7 @@ function App() {
               )}
               imageUrl={ArtWork}
               preview={ArtWorkPreview}
+              link='https://github.com/tsundarren/artwork'
             />
 
             <ProjectCard
@@ -122,6 +124,7 @@ function App() {
               )}
               imageUrl={CampusEats}
               preview={CampusEeatsPreview}
+              link='https://github.com/tsundarren/3160-Database-Project'
             />
         </div>  
       </section>

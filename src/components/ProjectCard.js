@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ProjectCard.css'; // Import the CSS file
 import Modal from './Modal'; // Import the Modal component
 
-const ProjectCard = ({ id, title, description, imageUrl, preview }) => {
+const ProjectCard = ({ id, title, description, imageUrl, preview, link }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -26,9 +26,10 @@ const ProjectCard = ({ id, title, description, imageUrl, preview }) => {
       {modalOpen && (
         <Modal
           title={title}
+          description={description}
           imageUrl={imageUrl}
           preview={preview}
-          description={description}
+          link={link}
           closeModal={closeModal}
         />
       )}
