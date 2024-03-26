@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ScrollDownArrow.css';
-import arrowImage from '../img/Downward Arrow.png';
+import arrowImage from '../img/arrow-down.png';
 
 const ScrollDownArrow = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -24,6 +24,7 @@ const ScrollDownArrow = () => {
         src={arrowImage}
         alt="Scroll Down Arrow"
         className="ScrollDownArrow"
+        aria-label="Scroll Down"
       />
       <span className="ScrollDownText">SCROLL DOWN</span>
     </div>

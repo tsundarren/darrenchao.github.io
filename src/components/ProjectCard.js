@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './ProjectCard.css'; // Import the CSS file
-import Modal from './Modal'; // Import the Modal component
+import './ProjectCard.css';
+import Modal from './Modal';
 
 const ProjectCard = ({ id, title, description, imageUrl, preview, link }) => {
   const [modalOpen, setModalOpen] = useState(false);

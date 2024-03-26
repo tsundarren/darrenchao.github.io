@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './TitleBar.css'; // Import the CSS file for the TitleBar styling
+import './TitleBar.css';
 
 const TitleBar = () => {
   const [scrolledDown, setScrolledDown] = useState(false);
@@ -18,7 +18,7 @@ const TitleBar = () => {
   }, []);
 
   const handleClick = (event, sectionId) => {
-    event.preventDefault(); // Prevent default behavior of anchor tags
+    event.preventDefault(); 
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });

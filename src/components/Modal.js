@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css'; // Import the CSS file for modal styles
+import './Modal.css'
 
 const Modal = ({ title, preview, description, link, closeModal }) => {
   return (

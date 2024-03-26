@@ -1,36 +1,33 @@
 .SkillList {
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Center items horizontally */
-    padding: 1.5vh; /* Adjust padding as needed */
-  }
-  
-  .SkillBar {
-    display: flex;
-    height: 3vh;
-    width: 75%;
-    background-color: #475569;
-    align-items: center;
-    border-radius: 20px;
-    margin-bottom: 1.5vh; /* Adjust spacing between bars */
-    margin-top: 1.5vh; /* Adjust spacing between bars */
-    position: relative;
-    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.25);
-  }
-  
-   
-  .SkillBarFill {
-    height: 100%;
-    background-color: #0e7490;
-    border-radius: 20px;
-  }
-  
-  .SkillName {
-    color: white;
-    position: absolute;
-    left: 1vw;
-    font-size: 16px;
-  }
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
 
+.SkillBar {
+  display: flex;
+  height: 30px;
+  width: 75%;
+  background-color: #475569;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.SkillBarFill {
+  height: 100%;
+  background-color: #0e7490;
+  border-radius: 20px;
+}
+
+.SkillName {
+  color: white;
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+}

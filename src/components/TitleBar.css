@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     z-index: 9998;
-    transition: box-shadow 1s ease; /* Add transition for smooth effect */
+    transition: box-shadow 1s ease; 
   }
   
   .TitleBar.scrolled {

@@ -20,7 +20,6 @@
   box-shadow: 3px 5px 15px 0px rgba(0,0,0,0.1);
 }
 
-
 .Links {
   display: flex;
 }
@@ -76,8 +75,8 @@
 
 .Portfolio {
   display: flex;
-  flex-direction: column; /* Change from row to column */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center; 
 }
 
 /* Skill Section */
@@ -123,6 +122,7 @@
   transform: scale(1.2);
 }
 
+
 .SectionTitle {
   font-size: 14pt;
   color: #0e7490;
@@ -130,12 +130,13 @@
   z-index: 0;
 }
 
+/* Section Separator */
 .Divider {
   border: 0;
   border-top: 1px solid #0e7490;
-  width: 70vw; /* Adjust width as needed */
-  margin-left: 20px; /* Adjust margin as needed */
-  margin-top: 20px; /* Adjust margin-top as needed */
+  width: 70vw;
+  margin-left: 20px;
+  margin-top: 20px;
   z-index: 0;
 }
 

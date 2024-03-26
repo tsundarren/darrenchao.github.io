@@ -5,9 +5,8 @@
   .typing-animation::after {
     content: "|";
     font-weight: 200;
-    color: white;
-    opacity: 0; /* Hide the caret by default */
-    animation: blink-caret 1s infinite; /* Start blinking caret animation */
+    opacity: 0; 
+    animation: blink-caret 1s infinite;
   }
   
   @keyframes blink-caret {

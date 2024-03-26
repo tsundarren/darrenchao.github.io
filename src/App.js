@@ -1,18 +1,16 @@
 import React from 'react';
 import './App.css';
 
-// img Imports
 import Portrait from './img/portrait.png';
 import GitHub from './img/github.png';
 import LinkedIn from './img/linkedin.png';
-import MusicalCalculator from './img/Musical.png'
-import MusicalCalcPreview from './img/musicalcalc.gif'
-import ArtWork from './img/ArtWork.png'
-import ArtWorkPreview from './img/artwork.gif'
-import CampusEats from './img/CampusEats.png'
-import CampusEeatsPreview from './img/campuseatspreview.png'
+import MusicalCalculator from './img/musical-calculator.png'
+import MusicalCalculatorPreview from './img/musical-calc-preview.gif'
+import ArtWork from './img/artwork.png'
+import ArtWorkPreview from './img/artwork-preview.gif'
+import CampusEats from './img/campus-eats.png'
+import CampusEatsPreview from './img/campus-eats-preview.png'
 
-// Component Imports
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import TypingAnimation from './components/TypingAnimation';
 import ProjectCard from './components/ProjectCard';
@@ -25,9 +23,8 @@ function App() {
   return (
     <ParallaxProvider>
     <div id="home" className="App">
-    <TitleBar /> {/* Add the TitleBar component */}
+      <TitleBar /> 
       <Parallax translateY={[-20, 20]}>
-        {/* Intro Container */}
         <ScrollDownArrow />
         <section className="Introduction">
           <header className="App-header">
@@ -57,8 +54,6 @@ function App() {
         </section>
       </Parallax>
 
-
-      {/* Portfolio Container */}
       <section id="portfolio" className="PortfolioSection">
       <div id="nightSky" className="NightSky">
           <night-sky
@@ -77,7 +72,7 @@ function App() {
         </div>
         <div className="Portfolio">
             <ProjectCard
-              id="MusicalCalculator"
+              id="musical-calculator"
               title="Musical Calculator"
               description={(
                 <div>
@@ -89,7 +84,7 @@ function App() {
                 </div>
               )}
               imageUrl={MusicalCalculator}
-              preview={MusicalCalcPreview}
+              preview={MusicalCalculatorPreview}
               link='https://github.com/tsundarren/musical-calculator'
             />
           
@@ -123,13 +118,12 @@ function App() {
                 </div>
               )}
               imageUrl={CampusEats}
-              preview={CampusEeatsPreview}
+              preview={CampusEatsPreview}
               link='https://github.com/tsundarren/3160-Database-Project'
             />
         </div>  
       </section>
 
-      {/* Skills Container */}
       <Parallax translateY={[-5, 5]}>
         <div style={{ display: 'flex', alignItems: 'center', width: '100%'}}>
           <h2 className="SectionTitle">MY SKILL</h2>
@@ -146,9 +140,9 @@ function App() {
             <SkillBar skill="SQL" width={60} />
           </div>
         </section>
-        </Parallax>
-      </div>
-    </ParallaxProvider>
+      </Parallax>
+    </div>
+  </ParallaxProvider>
   );
 }
 

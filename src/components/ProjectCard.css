@@ -4,25 +4,24 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .ProjectCard {
-  box-shadow: 15px 15px 71px -2px rgba(0,0,0,0.25); /* box-shadow.dev */
-  width: 40vh; /* Adjust the width */
-  height: 40vh; /* Adjust the height */
-  margin-top: 6vh; /* Add margin */
+  box-shadow: 15px 15px 71px -2px rgba(0, 0, 0, 0.25);
+  width: 40vh;
+  height: 40vh;
+  margin-top: 6vh;
 }
 
 .ProjectCard:hover {
-  background-color: rgba(0, 0, 0, .1); /* Example hover background color */
-  
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .ProjectCardContainer p {
-  font-size: 16px; /* Adjust the font size */
+  font-size: 16px;
   font-family: Source Code Pro;
-  color: white; /* Adjust the text color */
+  color: white;
 }
 
 .LinksContainer {
@@ -37,10 +36,10 @@
 }
 
 .LinkImage {
-  width: 25px; /* Adjust the image width */
-  height: 25px; /* Adjust the image height */
+  width: 25px;
+  height: 25px;
 }
 
 .Link:hover {
-  opacity: 0.7; /* Reduce opacity on hover for better feedback */
+  opacity: 0.7;
 }
