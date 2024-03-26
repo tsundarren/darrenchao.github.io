@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.82063ee5.css",
-    "main.js": "/static/js/main.beb5b4d7.js",
+    "main.css": "/static/css/main.1c6ee406.css",
+    "main.js": "/static/js/main.5c057155.js",
     "static/js/453.bb257cf5.chunk.js": "/static/js/453.bb257cf5.chunk.js",
-    "static/media/artwork-preview.gif": "/static/media/artwork-preview.da9bd4be4786bffaa3d6.gif",
+    "static/media/SF-Pro.ttf": "/static/media/SF-Pro.26de8db493c0fa76e754.ttf",
     "static/media/portrait.png": "/static/media/portrait.11f30aa23d33971b557c.png",
-    "static/media/musical-calc-preview.gif": "/static/media/musical-calc-preview.b85627eca6238876834c.gif",
     "static/media/musical-calculator.png": "/static/media/musical-calculator.86482c2a1041a36d9c8c.png",
     "static/media/github.png": "/static/media/github.d8b4e33418266ca1aaf9.png",
-    "static/media/campus-eats-preview.png": "/static/media/campus-eats-preview.dc8b14303f26c604a6bb.png",
     "static/media/linkedin.png": "/static/media/linkedin.b88d3f20200907604d99.png",
     "static/media/artwork.png": "/static/media/artwork.a67cd809650ca5a8e734.png",
     "static/media/campus-eats.png": "/static/media/campus-eats.705c2115ceb8d90224f0.png",
     "index.html": "/index.html",
-    "main.82063ee5.css.map": "/static/css/main.82063ee5.css.map",
-    "main.beb5b4d7.js.map": "/static/js/main.beb5b4d7.js.map",
+    "main.1c6ee406.css.map": "/static/css/main.1c6ee406.css.map",
+    "main.5c057155.js.map": "/static/js/main.5c057155.js.map",
     "453.bb257cf5.chunk.js.map": "/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82063ee5.css",
-    "static/js/main.beb5b4d7.js"
+    "static/css/main.1c6ee406.css",
+    "static/js/main.5c057155.js"
   ]
 }
