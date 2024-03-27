@@ -1,7 +1,7 @@
 .ProjectCardContainer {
-  font-family: 'San Francisco', sans-serif; /* Specify the font family with quotes */
+  font-family: 'San Francisco', sans-serif;
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Change align-items to center */
   cursor: pointer;
   padding: 20px;
   width: 50vw;
@@ -12,32 +12,29 @@
 }
 
 .ProjectCardContainer:hover {
-  background-color: rgba(157, 130, 199, 0.1); /* Darken the background color on hover */
   border-radius: 10px;
-  transition: background-color .125s ease; /* Add transition for background color change */
+  background-color: rgba(157, 130, 199, 0.1);
+  transition: background-color .125s ease;
 }
 
 .ImagePreview {
   flex: 0 0 auto;
-  width: 150px; /* Adjust according to your preference */
-  height: 150px; /* Adjust according to your preference */
+  width: 150px; 
+  height: 150px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   margin-right: 20px;
 }
 
-.CardContent {
-  flex: 1 1 auto;
-}
-
 .CardContent h3 {
-  font-size: 14px;
+  font-size: 11pt;
   margin-bottom: 10px;
+  margin-top: 0; /* Add margin-top: 0; to remove any default margin */
 }
 
 .CardContent p {
-  font-size: 14px;
+  font-size: 10pt;
   color: #94a3b8;
 }
 
@@ -62,5 +59,3 @@
   margin-right: 8px; /* Adjust the margin to control the space between pills */
   margin-bottom: 8px; /* Adjust the margin to control the space between rows of pills */
 }
-
-

@@ -58,10 +58,10 @@ function App() {
       <div id="nightSky" className="NightSky">
           <night-sky
             id="nightSky"
-            layers="4"
-            density="3"
+            layers="3"
+            density="4"
             velocity-x="0"
-            velocity-y="60"
+            velocity-y="70"
             star-color="#FFF"
             background-color="transparent"
           ></night-sky>
