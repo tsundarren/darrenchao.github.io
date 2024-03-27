@@ -31,11 +31,11 @@ function App() {
             <div className="IntroductionContent">
               <div className="IntroductionText">
                 <p style={{ fontFamily: 'Source Code Pro, sans-serif', fontSize: '12pt', color: '#bae6fd' }}>Hi! My name is</p>
-                <p style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '600', fontSize: '48pt', color: '#bae6fd' }}>Darren Chao</p>
-                <p style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '600', fontSize: '32pt', color: '#0e7490' }}>
+                <p style={{ fontFamily: 'San Francisco, sans-serif', fontWeight: '600', fontSize: '48pt', color: '#bae6fd' }}>Darren Chao</p>
+                <p style={{ fontFamily: 'San Francisco, sans-serif', fontWeight: '600', fontSize: '32pt', color: '#0e7490' }}>
                   <TypingAnimation text="An aspiring software dev." />
                 </p>
-                <p style={{ fontFamily: 'Poppins, sans-serif', fontWeight: '400', fontSize: '12pt', color: '#0e7490', marginTop: '20px' }}>Hello, I'm Darren! I'm a recent graduate from the University of North Carolina at Charlotte, holding a Bachelor of Science degree in Computer Science. My fascination with computer science began at a young age when I was introduced to basic HTML in elementary school. Back then, I started by creating simple websites for my classmates, and this early exposure ignited my passion for the field. Ever since those initial experiences, I've been captivated by the world of computer science.</p>
+                <p style={{ fontFamily: 'San Francisco, sans-serif', fontWeight: '400', fontSize: '12pt', color: '#0e7490', marginTop: '20px' }}>Hello, I'm Darren! I'm a recent graduate from the University of North Carolina at Charlotte, holding a Bachelor of Science degree in Computer Science. My fascination with computer science began at a young age when I was introduced to basic HTML in elementary school. Back then, I started by creating simple websites for my classmates, and this early exposure ignited my passion for the field. Ever since those initial experiences, I've been captivated by the world of computer science.</p>
               </div>
               <img src={Portrait} className="Portrait" alt="me" />
             </div>
