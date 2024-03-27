@@ -18,8 +18,8 @@
 }
 
 .Portrait {
-  height: 50vh;
-  width: auto;
+  width: 50vw;
+  height: auto;
   border-radius: 100%;
   margin-right: 10vw;
   box-shadow: 3px 5px 15px 0px rgba(0,0,0,0.1);

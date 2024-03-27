@@ -3,22 +3,18 @@
   display: flex;
   align-items: flex-start;
   cursor: pointer;
-  padding: 10px;
-  width: 60vw;
+  padding: 20px;
+  width: 50vw;
   text-align: left;
   background-color: transparent;
-  margin: 10px;
-  transition: background-color 0.3s ease; /* Add transition for smooth effect */
-  z-index: 1;
+  margin: 20px;
+  transition: opacity 0.25s ease;
 }
 
 .ProjectCardContainer:hover {
-  background-color: rgba(131, 109, 167, 0.1); /* Darken the background color on hover */
+  background-color: rgba(157, 130, 199, 0.1); /* Darken the background color on hover */
   border-radius: 10px;
-}
-
-.ProjectCardContainer:hover ~ .ProjectCardContainer {
-  opacity: 0.5; /* Reduce opacity of other cards on hover */
+  transition: background-color .125s ease; /* Add transition for background color change */
 }
 
 .ImagePreview {
@@ -44,3 +40,27 @@
   font-size: 14px;
   color: #94a3b8;
 }
+
+.ProjectCardLink {
+  text-decoration: none;
+  color: inherit; /* Inherits the color from the parent */
+  z-index: 1;
+}
+
+.Stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Pill {
+  display: inline-block;
+  background-color: #222f44;
+  color: #cbd5e1;
+  font-size: 10pt;
+  border-radius: 16px; /* Adjust the border-radius to change the pill's roundness */
+  padding: 2px 14px; /* Adjust the padding to control the pill's size */
+  margin-right: 8px; /* Adjust the margin to control the space between pills */
+  margin-bottom: 8px; /* Adjust the margin to control the space between rows of pills */
+}
+
+

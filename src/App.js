@@ -23,9 +23,8 @@ function App() {
     <ParallaxProvider>
     <div id="home" className="App">
       <TitleBar /> 
+      <ScrollDownArrow />
       <Parallax translateY={[-20, 20]}>
-        <ScrollDownArrow />
-
         {/* Introduction Section */}
         <section className="Introduction">
           <header className="App-header">
@@ -43,14 +42,12 @@ function App() {
 
             {/* Social Icons */}
             <div className="Social">
-              <Parallax translateY={[0, -75]}>
-                <a href="https://GitHub.com/tsundarren" target="_blank" rel="noopener noreferrer">
-                  <img src={GitHub} alt='GitHub' className='icon' />
-                </a>
-                <a href="https://www.LinkedIn.com/in/darrenmond-chao-13685919a/" target="_blank" rel="noopener noreferrer">
-                  <img src={LinkedIn} alt='LinkedIn' className='icon' />
-                </a>
-              </Parallax>
+              <a href="https://GitHub.com/tsundarren" target="_blank" rel="noopener noreferrer">
+                <img src={GitHub} alt='GitHub' className='icon' />
+              </a>
+              <a href="https://www.LinkedIn.com/in/darrenmond-chao-13685919a/" target="_blank" rel="noopener noreferrer">
+                <img src={LinkedIn} alt='LinkedIn' className='icon' />
+              </a>
             </div>
           </header>
         </section>
@@ -74,35 +71,41 @@ function App() {
           <hr className="Divider"/>
         </div>
         <div className="Portfolio">
-            <ProjectCard
-              title="Musical Calculator"
-              description={(
-                <div>
-                  Musical Calculator is a React passion project exploring modern web development. It combines basic arithmetic functionality with interactive piano sounds, providing users with a unique and engaging calculator experience. Users can perform calculations through mouse clicks or keyboard inputs while enjoying 19 distinct piano key sounds.
-                </div>
-              )}
-              imageUrl={MusicalCalculator}
-            />
-          
-            <ProjectCard
-              title="ArtWork"
-              description={(
-                <div>
-                  ArtWork, developed as part of my UNCC capstone course, showcases my technical expertise in Python Flask, MySQL, HTML5, CSS, and JavaScript. It merges social networking with digital commerce, enabling users to curate artistic portfolios and engage dynamically through likes, comments, and follows. With real-time auctions, users can commission and bid for artwork, fostering a vibrant marketplace for creative talent.
-                </div>
-              )}
-              imageUrl={ArtWork}
-            />
+          <ProjectCard
+            title="Musical Calculator"
+            description={(
+              <div>
+                Musical Calculator is a React passion project exploring modern web development. It combines basic arithmetic functionality with interactive piano sounds, providing users with a unique and engaging calculator experience. Users can perform calculations through mouse clicks or keyboard inputs while enjoying 19 distinct piano key sounds.
+              </div>
+            )}
+            imageUrl={MusicalCalculator}
+            url="https://tsundarren.github.io/musical-calculator/"
+            stack={['React', 'JavaScript', 'HTML', 'CSS']}
+          />
+        
+          <ProjectCard
+            title="ArtWork"
+            description={(
+              <div>
+                ArtWork, developed as part of my UNCC capstone course, showcases my technical expertise in Python Flask, MySQL, HTML5, CSS, and JavaScript. It merges social networking with digital commerce, enabling users to curate artistic portfolios and engage dynamically through likes, comments, and follows. With real-time auctions, users can commission and bid for artwork, fostering a vibrant marketplace for creative talent.
+              </div>
+            )}
+            imageUrl={ArtWork}
+            url="https://github.com/tsundarren/ArtWork"
+            stack={['Flask', 'SQL', 'HTML']}
+          />
 
-            <ProjectCard
-              title="Campus Eats"
-              description={(
-                <div>
-                  The UNCC 3160 Database Design and Implementation project aims to enhance the "Campus Eats" database with a robust rating system. Using MySQL, we'll integrate user ratings for restaurants and delivery drivers, empowering users to contribute insights and reviews for the Campus Eats community.
-                </div>
-              )}
-              imageUrl={CampusEats}
-            />
+          <ProjectCard
+            title="Campus Eats"
+            description={(
+              <div>
+                The UNCC 3160 Database Design and Implementation project aims to enhance the "Campus Eats" database with a robust rating system. Using MySQL, we'll integrate user ratings for restaurants and delivery drivers, empowering users to contribute insights and reviews for the Campus Eats community.
+              </div>
+            )}
+            imageUrl={CampusEats}
+            url="https://github.com/tsundarren/3160-Database-Project"
+            stack={['SQL']}
+          />
         </div>  
       </section>
 
